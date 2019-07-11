@@ -50,7 +50,7 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
+		background: #f9f4e5;
 		font-size: 14px;
 		line-height: 24px;
 		color: #888;
@@ -60,7 +60,7 @@
 
 	#content-wrapper {
 		padding: 0 0 40px 0;
-		background-color: #fff;
+		background-color: #f9f4e5;
 	}
 
 	/* Boxed Layout Style */
