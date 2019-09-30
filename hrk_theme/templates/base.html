@@ -71,6 +71,7 @@
         <![endif]-->
 		
 		<script src="{{ SITEURL }}/theme/js/jquery-3.3.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/414b97d2d4.js" crossorigin="anonymous"></script>
     {% endblock head %}
 
 	{% block opengraph %}
@@ -160,14 +161,15 @@
 				<div class="four columns">
 					{% block pv %}
 					{% endblock pv %}
+                    &nbsp
 				</div>
-				{% if SOCIAL %}
+				{% if FA_SOCIAL %}
 					<div class="six columns">
 						<ul class="social-icons-footer">
 							{% for name,link in FA_SOCIAL %}
-								<li class="social-icons-footer-fa-override">
+								<li>
 									<a href="{{ link }}" class="tooltip top social-icons-footer-fa-override" title="{{ name }}">
-										<i class="icon-{{ name|lower }}"></i>
+										<i class="{{ name|lower }}"></i>
 									</a>
 								</li>
 						    {% endfor %}
